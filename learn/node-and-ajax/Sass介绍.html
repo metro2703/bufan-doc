@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sass | 不凡学院前端100天</title>
+    <meta name="description" content="快速上手,循序渐进">
+    <link rel="icon" href="/bufan-doc/logo.jpg">
+  <link rel="manifest" href="/bufan-doc/manifest.json">
+  <meta name="theme-color" content="#3eaf7c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/bufan-doc/icons/apple-touch-icon-152x152.png">
+  <link rel="mask-icon" href="/bufan-doc/icons/safari-pinned-tab.svg" color="#3eaf7c">
+  <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/bufan-doc/assets/css/0.styles.4fc22246.css" as="style"><link rel="preload" href="/bufan-doc/assets/js/app.f4cc6427.js" as="script"><link rel="preload" href="/bufan-doc/assets/js/4.d60abc91.js" as="script"><link rel="preload" href="/bufan-doc/assets/js/3.08e48031.js" as="script"><link rel="preload" href="/bufan-doc/assets/js/89.4be8b33a.js" as="script"><link rel="preload" href="/bufan-doc/assets/js/14.618a24b7.js" as="script"><link rel="prefetch" href="/bufan-doc/assets/js/10.3b8a5562.js"><link rel="prefetch" href="/bufan-doc/assets/js/100.4ba68262.js"><link rel="prefetch" href="/bufan-doc/assets/js/101.6db92bf8.js"><link rel="prefetch" href="/bufan-doc/assets/js/102.01d55fe2.js"><link rel="prefetch" href="/bufan-doc/assets/js/103.4104b1e2.js"><link rel="prefetch" href="/bufan-doc/assets/js/104.af35539f.js"><link rel="prefetch" href="/bufan-doc/assets/js/105.64f144d2.js"><link rel="prefetch" href="/bufan-doc/assets/js/106.1ad49cc0.js"><link rel="prefetch" href="/bufan-doc/assets/js/107.b3243d38.js"><link rel="prefetch" href="/bufan-doc/assets/js/108.e4f06cdf.js"><link rel="prefetch" href="/bufan-doc/assets/js/109.f82c6f4f.js"><link rel="prefetch" href="/bufan-doc/assets/js/11.dabd9edf.js"><link rel="prefetch" href="/bufan-doc/assets/js/110.43ef8a19.js"><link rel="prefetch" href="/bufan-doc/assets/js/111.8d21dabd.js"><link rel="prefetch" href="/bufan-doc/assets/js/112.97d55372.js"><link rel="prefetch" href="/bufan-doc/assets/js/113.17be5afc.js"><link rel="prefetch" href="/bufan-doc/assets/js/114.7c7c0031.js"><link rel="prefetch" href="/bufan-doc/assets/js/115.6191c96c.js"><link rel="prefetch" href="/bufan-doc/assets/js/116.f8406fce.js"><link rel="prefetch" href="/bufan-doc/assets/js/117.7e6ced5f.js"><link rel="prefetch" href="/bufan-doc/assets/js/118.95f2b2c6.js"><link rel="prefetch" href="/bufan-doc/assets/js/119.656fb4a6.js"><link rel="prefetch" href="/bufan-doc/assets/js/12.28f15829.js"><link rel="prefetch" href="/bufan-doc/assets/js/120.884f6058.js"><link rel="prefetch" href="/bufan-doc/assets/js/121.1ea98fcd.js"><link rel="prefetch" href="/bufan-doc/assets/js/122.ff3c9d25.js"><link rel="prefetch" href="/bufan-doc/assets/js/123.2d0a0879.js"><link rel="prefetch" href="/bufan-doc/assets/js/124.dbee8ca1.js"><link rel="prefetch" href="/bufan-doc/assets/js/125.fe02abe6.js"><link rel="prefetch" href="/bufan-doc/assets/js/126.ea7f7bb5.js"><link rel="prefetch" href="/bufan-doc/assets/js/127.606c2de1.js"><link rel="prefetch" href="/bufan-doc/assets/js/128.0f2b467b.js"><link rel="prefetch" href="/bufan-doc/assets/js/129.97cbaeca.js"><link rel="prefetch" href="/bufan-doc/assets/js/13.83be0207.js"><link rel="prefetch" href="/bufan-doc/assets/js/15.671b0072.js"><link rel="prefetch" href="/bufan-doc/assets/js/16.6425c53e.js"><link rel="prefetch" href="/bufan-doc/assets/js/17.f748524f.js"><link rel="prefetch" href="/bufan-doc/assets/js/18.dae45be7.js"><link rel="prefetch" href="/bufan-doc/assets/js/19.a61fe4f0.js"><link rel="prefetch" href="/bufan-doc/assets/js/20.80399a10.js"><link rel="prefetch" href="/bufan-doc/assets/js/21.d424c18b.js"><link rel="prefetch" href="/bufan-doc/assets/js/22.5d82a21d.js"><link rel="prefetch" href="/bufan-doc/assets/js/23.36b6d0a0.js"><link rel="prefetch" href="/bufan-doc/assets/js/24.b2436ce4.js"><link rel="prefetch" href="/bufan-doc/assets/js/25.d0c6e25f.js"><link rel="prefetch" href="/bufan-doc/assets/js/26.b5e3c19c.js"><link rel="prefetch" href="/bufan-doc/assets/js/27.a524df1a.js"><link rel="prefetch" href="/bufan-doc/assets/js/28.25c0ed5e.js"><link rel="prefetch" href="/bufan-doc/assets/js/29.f9b5a855.js"><link rel="prefetch" href="/bufan-doc/assets/js/30.67d39ab6.js"><link rel="prefetch" href="/bufan-doc/assets/js/31.92b1b15d.js"><link rel="prefetch" href="/bufan-doc/assets/js/32.f4e82e10.js"><link rel="prefetch" href="/bufan-doc/assets/js/33.8e078611.js"><link rel="prefetch" href="/bufan-doc/assets/js/34.b4bea20d.js"><link rel="prefetch" href="/bufan-doc/assets/js/35.24d90a48.js"><link rel="prefetch" href="/bufan-doc/assets/js/36.ef702182.js"><link rel="prefetch" href="/bufan-doc/assets/js/37.f5cc6f4f.js"><link rel="prefetch" href="/bufan-doc/assets/js/38.45b62383.js"><link rel="prefetch" href="/bufan-doc/assets/js/39.5351a017.js"><link rel="prefetch" href="/bufan-doc/assets/js/40.39da4318.js"><link rel="prefetch" href="/bufan-doc/assets/js/41.bc5678de.js"><link rel="prefetch" href="/bufan-doc/assets/js/42.f4a5cc7c.js"><link rel="prefetch" href="/bufan-doc/assets/js/43.83e2ec23.js"><link rel="prefetch" href="/bufan-doc/assets/js/44.4675ab38.js"><link rel="prefetch" href="/bufan-doc/assets/js/45.72d3f200.js"><link rel="prefetch" href="/bufan-doc/assets/js/46.8d77ad14.js"><link rel="prefetch" href="/bufan-doc/assets/js/47.7daeae21.js"><link rel="prefetch" href="/bufan-doc/assets/js/48.8c3532fd.js"><link rel="prefetch" href="/bufan-doc/assets/js/49.d2ceb345.js"><link rel="prefetch" href="/bufan-doc/assets/js/5.38bfdf08.js"><link rel="prefetch" href="/bufan-doc/assets/js/50.41300c4a.js"><link rel="prefetch" href="/bufan-doc/assets/js/51.7123e828.js"><link rel="prefetch" href="/bufan-doc/assets/js/52.96ab2ac5.js"><link rel="prefetch" href="/bufan-doc/assets/js/53.01bcfe44.js"><link rel="prefetch" href="/bufan-doc/assets/js/54.379a6e11.js"><link rel="prefetch" href="/bufan-doc/assets/js/55.05379669.js"><link rel="prefetch" href="/bufan-doc/assets/js/56.380aaeac.js"><link rel="prefetch" href="/bufan-doc/assets/js/57.5638cfe7.js"><link rel="prefetch" href="/bufan-doc/assets/js/58.4aaf9b06.js"><link rel="prefetch" href="/bufan-doc/assets/js/59.6db0022e.js"><link rel="prefetch" href="/bufan-doc/assets/js/6.2c430a05.js"><link rel="prefetch" href="/bufan-doc/assets/js/60.5b1ba8d4.js"><link rel="prefetch" href="/bufan-doc/assets/js/61.f226504c.js"><link rel="prefetch" href="/bufan-doc/assets/js/62.2563abf3.js"><link rel="prefetch" href="/bufan-doc/assets/js/63.94b44c4a.js"><link rel="prefetch" href="/bufan-doc/assets/js/64.2b0b61cf.js"><link rel="prefetch" href="/bufan-doc/assets/js/65.6d2830f1.js"><link rel="prefetch" href="/bufan-doc/assets/js/66.65a4cc01.js"><link rel="prefetch" href="/bufan-doc/assets/js/67.7b270307.js"><link rel="prefetch" href="/bufan-doc/assets/js/68.a8fe45f4.js"><link rel="prefetch" href="/bufan-doc/assets/js/69.8f88d229.js"><link rel="prefetch" href="/bufan-doc/assets/js/7.e6ecd274.js"><link rel="prefetch" href="/bufan-doc/assets/js/70.1ddc66b4.js"><link rel="prefetch" href="/bufan-doc/assets/js/71.77170c41.js"><link rel="prefetch" href="/bufan-doc/assets/js/72.1dc4049b.js"><link rel="prefetch" href="/bufan-doc/assets/js/73.7da3757c.js"><link rel="prefetch" href="/bufan-doc/assets/js/74.2181d25c.js"><link rel="prefetch" href="/bufan-doc/assets/js/75.be8d5dc6.js"><link rel="prefetch" href="/bufan-doc/assets/js/76.4cbdb224.js"><link rel="prefetch" href="/bufan-doc/assets/js/77.5ee263b6.js"><link rel="prefetch" href="/bufan-doc/assets/js/78.6b078925.js"><link rel="prefetch" href="/bufan-doc/assets/js/79.414db56b.js"><link rel="prefetch" href="/bufan-doc/assets/js/8.156e0c5d.js"><link rel="prefetch" href="/bufan-doc/assets/js/80.213572d0.js"><link rel="prefetch" href="/bufan-doc/assets/js/81.33f5de66.js"><link rel="prefetch" href="/bufan-doc/assets/js/82.d854fa6f.js"><link rel="prefetch" href="/bufan-doc/assets/js/83.110c252e.js"><link rel="prefetch" href="/bufan-doc/assets/js/84.473df94b.js"><link rel="prefetch" href="/bufan-doc/assets/js/85.ee0c2c9c.js"><link rel="prefetch" href="/bufan-doc/assets/js/86.ec58ee6e.js"><link rel="prefetch" href="/bufan-doc/assets/js/87.82972f59.js"><link rel="prefetch" href="/bufan-doc/assets/js/88.23a39bc5.js"><link rel="prefetch" href="/bufan-doc/assets/js/9.44c09d8c.js"><link rel="prefetch" href="/bufan-doc/assets/js/90.44c2861c.js"><link rel="prefetch" href="/bufan-doc/assets/js/91.468becad.js"><link rel="prefetch" href="/bufan-doc/assets/js/92.9e5ceb34.js"><link rel="prefetch" href="/bufan-doc/assets/js/93.9032fb68.js"><link rel="prefetch" href="/bufan-doc/assets/js/94.d7e6c360.js"><link rel="prefetch" href="/bufan-doc/assets/js/95.0fa635fb.js"><link rel="prefetch" href="/bufan-doc/assets/js/96.c7a82be8.js"><link rel="prefetch" href="/bufan-doc/assets/js/97.bf5ce894.js"><link rel="prefetch" href="/bufan-doc/assets/js/98.9d46ee61.js"><link rel="prefetch" href="/bufan-doc/assets/js/99.40ccc798.js"><link rel="prefetch" href="/bufan-doc/assets/js/vendors~notification.8531c786.js">
+    <link rel="stylesheet" href="/bufan-doc/assets/css/0.styles.4fc22246.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-36ae5a00><header class="navbar" data-v-36ae5a00><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/bufan-doc/" class="home-link router-link-active"><!----> <span class="site-name">不凡学院前端100天</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/bufan-doc/learn/" class="nav-link router-link-active">学习教程</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">配套资料</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/bufan-doc/learn/soft/" class="nav-link">前端工具</a></li><li class="dropdown-item"><!----> <a href="/bufan-doc/interview/" class="nav-link">面试之道</a></li></ul></div></div><div class="nav-item"><a href="http://www.bufanui.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  不凡官网
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/nevermo2013/dingpq" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask" data-v-36ae5a00></div> <aside class="sidebar" data-v-36ae5a00><nav class="nav-links"><div class="nav-item"><a href="/bufan-doc/learn/" class="nav-link router-link-active">学习教程</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">配套资料</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/bufan-doc/learn/soft/" class="nav-link">前端工具</a></li><li class="dropdown-item"><!----> <a href="/bufan-doc/interview/" class="nav-link">面试之道</a></li></ul></div></div><div class="nav-item"><a href="http://www.bufanui.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  不凡官网
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/nevermo2013/dingpq" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav> <a href="http://www.bufanui.com" target="_blank" class="ads ads-top" data-v-36ae5a00><img src="/bufan-doc/assets/img/bf.b6eae9c3.jpg" alt="" class="ads-img" data-v-36ae5a00></a> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>起步</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/" class="sidebar-link">web 前端介绍</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>HTML和CSS基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/html-and-css/01-网页初识.html" class="sidebar-link">网页初识</a></li><li><a href="/bufan-doc/learn/html-and-css/02-HTML初识.html" class="sidebar-link">HTML 初识</a></li><li><a href="/bufan-doc/learn/html-and-css/03-HTML常用标签.html" class="sidebar-link">HTML 常用标签</a></li><li><a href="/bufan-doc/learn/html-and-css/04-CSS初识.html" class="sidebar-link">CSS 初识</a></li><li><a href="/bufan-doc/learn/html-and-css/05-CSS盒子模型.html" class="sidebar-link">CSS 盒子模型</a></li><li><a href="/bufan-doc/learn/html-and-css/06-CSS常用布局.html" class="sidebar-link">CSS 常用布局</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JavaScript基础语法</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/javascript/01-JavaScript初识.html" class="sidebar-link">JavaScript 初识</a></li><li><a href="/bufan-doc/learn/javascript/02-变量和数据类型.html" class="sidebar-link">变量和数据类型</a></li><li><a href="/bufan-doc/learn/javascript/03-数据类型转换.html" class="sidebar-link">数据类型转换</a></li><li><a href="/bufan-doc/learn/javascript/04-常用运算符.html" class="sidebar-link">常用运算符</a></li><li><a href="/bufan-doc/learn/javascript/05-Date和Math对象.html" class="sidebar-link">Date 和 Math 对象</a></li><li><a href="/bufan-doc/learn/javascript/06-流程控制语句.html" class="sidebar-link">流程控制语句</a></li><li><a href="/bufan-doc/learn/javascript/07-数组初识.html" class="sidebar-link">数组初识</a></li><li><a href="/bufan-doc/learn/javascript/08-函数初识.html" class="sidebar-link">函数初识</a></li><li><a href="/bufan-doc/learn/javascript/09-排序和递归算法.html" class="sidebar-link">排序和递归</a></li><li><a href="/bufan-doc/learn/javascript/10-对象初识.html" class="sidebar-link">对象初识</a></li><li><a href="/bufan-doc/learn/javascript/11-数组和字符串常用方法.html" class="sidebar-link">数组和字符串常用方法</a></li><li><a href="/bufan-doc/learn/javascript/12-垃圾回收机制.html" class="sidebar-link">垃圾回收机制</a></li><li><a href="/bufan-doc/learn/javascript/13-代码风格和压缩.html" class="sidebar-link">代码风格和压缩</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>DOM和BOM</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/dom/" class="sidebar-link">DOM</a></li><li><a href="/bufan-doc/learn/bom/" class="sidebar-link">BOM</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>jQuery</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/jquery/" class="sidebar-link">jQuery</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>HTML5和CSS3</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/html5-and-css3/HTML5介绍.html" class="sidebar-link">HTML5介绍</a></li><li><a href="/bufan-doc/learn/html5-and-css3/CSS3介绍.html" class="sidebar-link">CSS3 介绍</a></li><li><a href="/bufan-doc/learn/html5-and-css3/FLEX布局介绍.html" class="sidebar-link">FLEX 布局</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>移动端开发</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/mobile-web/" class="sidebar-link">移动 web</a></li><li><a href="/bufan-doc/learn/mobile-web/01-移动端适配.html" class="sidebar-link">移动端适配</a></li><li><a href="/bufan-doc/learn/mobile-web/02-移动端事件.html" class="sidebar-link">移动端事件</a></li><li><a href="/bufan-doc/learn/mobile-web/03-媒体查询.html" class="sidebar-link">媒体查询</a></li><li><a href="/bufan-doc/learn/mobile-web/04-常见移动端问题.html" class="sidebar-link">常见的移动端问题</a></li><li><a href="/bufan-doc/learn/mobile-web/05-补充.html" class="sidebar-link">扩充知识</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Node.js与AJAX</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/node-and-ajax/AJAX.html" class="sidebar-link">AJAX</a></li><li><a href="/bufan-doc/learn/node-and-ajax/node.html" class="sidebar-link">Node.js</a></li><li><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html" class="active sidebar-link">Sass</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#安装" class="sidebar-link">安装</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#安装-ruby" class="sidebar-link">安装 Ruby</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#安装-sass" class="sidebar-link">安装 Sass</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#sass-常用命令：" class="sidebar-link">Sass 常用命令：</a></li></ul></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#sass-的编译" class="sidebar-link">Sass 的编译</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#命令行编译：" class="sidebar-link">命令行编译：</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#命令行编译配置选项：" class="sidebar-link">命令行编译配置选项：</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#编译演示" class="sidebar-link">编译演示</a></li></ul></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#sass-的使用" class="sidebar-link">Sass 的使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#一、嵌套" class="sidebar-link">一、嵌套</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#二、变量" class="sidebar-link">二、变量</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#三、混合" class="sidebar-link">三、混合</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#四、继承" class="sidebar-link">四、继承</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#五、导入扩展" class="sidebar-link">五、导入扩展</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#六、注释" class="sidebar-link">六、注释</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#七、-颜色调整" class="sidebar-link">七、 颜色调整</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#八、map" class="sidebar-link">八、map</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#九、数值类型与运算" class="sidebar-link">九、数值类型与运算</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#十、拼接、插入" class="sidebar-link">十、拼接、插入</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#十一、控制指令" class="sidebar-link">十一、控制指令</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#十二、函数" class="sidebar-link">十二、函数</a></li><li class="sidebar-sub-header"><a href="/bufan-doc/learn/node-and-ajax/Sass介绍.html#十三、警告与错误" class="sidebar-link">十三、警告与错误</a></li></ul></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>ES6</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/es6/" class="sidebar-link">ES6 简介</a></li><li><a href="/bufan-doc/learn/es6/01-let和const.html" class="sidebar-link">let 和 const</a></li><li><a href="/bufan-doc/learn/es6/02-箭头函数.html" class="sidebar-link">箭头函数</a></li><li><a href="/bufan-doc/learn/es6/03-函数默认值.html" class="sidebar-link">函数默认值</a></li><li><a href="/bufan-doc/learn/es6/04-模板字符串.html" class="sidebar-link">字符串模板</a></li><li><a href="/bufan-doc/learn/es6/05-解构赋值.html" class="sidebar-link">变量解构赋值</a></li><li><a href="/bufan-doc/learn/es6/06-数组的扩展.html" class="sidebar-link">数组的扩展</a></li><li><a href="/bufan-doc/learn/es6/07-Set和Map数据结构.html" class="sidebar-link">Set 和 Map 数据结构</a></li><li><a href="/bufan-doc/learn/es6/08-对象的扩展.html" class="sidebar-link">对象的扩展</a></li><li><a href="/bufan-doc/learn/es6/09-symbol.html" class="sidebar-link">Symbol</a></li><li><a href="/bufan-doc/learn/es6/10-Iterator(遍历器).html" class="sidebar-link">Iterator（遍历器）</a></li><li><a href="/bufan-doc/learn/es6/11-class.html" class="sidebar-link">class</a></li><li><a href="/bufan-doc/learn/es6/12-Promise.html" class="sidebar-link">Promise</a></li><li><a href="/bufan-doc/learn/es6/13-async、await.html" class="sidebar-link">async await</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JavaScript进阶</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/javascript-advance/面向对象.html" class="sidebar-link">面向对象</a></li><li><a href="/bufan-doc/learn/javascript-advance/正则表达式.html" class="sidebar-link">正则表达式</a></li><li><a href="/bufan-doc/learn/canvas/" class="sidebar-link">canvas</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/vue/" class="sidebar-link">vue 简介</a></li><li><a href="/bufan-doc/learn/vue/01-vue入门.html" class="sidebar-link">vue</a></li><li><a href="/bufan-doc/learn/vue/02-计算属性和侦听器.html" class="sidebar-link">计算属性和侦听器</a></li><li><a href="/bufan-doc/learn/vue/03-Class与Style绑定.html" class="sidebar-link">Class 与 Style 绑定</a></li><li><a href="/bufan-doc/learn/vue/04-事件处理.html" class="sidebar-link">事件处理</a></li><li><a href="/bufan-doc/learn/vue/05-组件基础.html" class="sidebar-link">组件</a></li><li><a href="/bufan-doc/learn/vue/06-生命周期.html" class="sidebar-link">生命周期</a></li><li><a href="/bufan-doc/learn/vue/07-插槽.html" class="sidebar-link">插槽</a></li><li><a href="/bufan-doc/learn/vue/08-动态组件.html" class="sidebar-link">动态组件</a></li><li><a href="/bufan-doc/learn/vue/09-处理边界情况.html" class="sidebar-link">处理边界情况</a></li><li><a href="/bufan-doc/learn/vue/10-过渡和动画.html" class="sidebar-link">过渡效果动画</a></li><li><a href="/bufan-doc/learn/vue/11-可复用性和组合.html" class="sidebar-link">Vue 的可复用性与组合</a></li><li><a href="/bufan-doc/learn/vue/12-vue-cli.html" class="sidebar-link">Vue CLI</a></li><li><a href="/bufan-doc/learn/vue/13-vue-router.html" class="sidebar-link">Vue Router</a></li><li><a href="/bufan-doc/learn/vue/14-vuex入门.html" class="sidebar-link">vuex 入门</a></li><li><a href="/bufan-doc/learn/vue/15-vuex高级.html" class="sidebar-link">vuex 进阶</a></li><li><a href="/bufan-doc/learn/vue/16-axios.html" class="sidebar-link">axios</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>微信小程序开发</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/wx-lite/" class="sidebar-link">微信小程序</a></li><li><a href="/bufan-doc/learn/wx-lite/01-小程序使用.html" class="sidebar-link">小程序的使用</a></li><li><a href="/bufan-doc/learn/wx-lite/02-小程序的生命周期.html" class="sidebar-link">生命周期</a></li><li><a href="/bufan-doc/learn/wx-lite/03-小程序事件处理.html" class="sidebar-link">小程序的事件</a></li><li><a href="/bufan-doc/learn/wx-lite/04-自定义组件.html" class="sidebar-link">自定义组件</a></li><li><a href="/bufan-doc/learn/wx-lite/05-图片操作.html" class="sidebar-link">图片操作</a></li><li><a href="/bufan-doc/learn/wx-lite/06-网络请求.html" class="sidebar-link">网络请求</a></li><li><a href="/bufan-doc/learn/wx-lite/07-微信本地存储.html" class="sidebar-link">微信本地存储</a></li><li><a href="/bufan-doc/learn/wx-lite/08-页面通信.html" class="sidebar-link">页面通讯</a></li><li><a href="/bufan-doc/learn/wx-lite/09-小程序鉴权.html" class="sidebar-link">微信获取用户信息和微信登陆</a></li><li><a href="/bufan-doc/learn/wx-lite/10-弹窗.html" class="sidebar-link">微信的弹窗</a></li><li><a href="/bufan-doc/learn/wx-lite/11-补充知识.html" class="sidebar-link">其他的小知识</a></li><li><a href="/bufan-doc/learn/wx-lite/12-注意事项.html" class="sidebar-link">注意事项</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>uni-app开发</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/uni/" class="sidebar-link">uni-app</a></li><li><a href="/bufan-doc/learn/uni/uniApp注意事项.html" class="sidebar-link">uni-app 注意事项</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>实战练习</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/bufan-doc/learn/just-coding/" class="sidebar-link">码吧</a></li></ul></section></li></ul> </aside> <main class="page" data-v-36ae5a00> <div class="theme-default-content content__default"><h1 id="sass"><a href="#sass" class="header-anchor">#</a> Sass</h1> <p>Sass/Less 是一门 CSS 预处理语言，它扩展了 CSS 语言，增加了变量，Mixin，函数等特性，使 CSS 更易维护和扩展</p> <h2 id="安装"><a href="#安装" class="header-anchor">#</a> 安装</h2> <h3 id="安装-ruby"><a href="#安装-ruby" class="header-anchor">#</a> 安装 Ruby</h3> <p><code>sass</code>基于<code>Ruby</code>语言开发而成，因此安装<code>sass</code>前需要安装<code>Ruby</code></p> <p>注意：安装过程中请注意勾选<code>Add Ruby executables to your PATH</code>添加到系统环境变量</p> <p>安装完成后需测试安装有没有成功，win+r 输入 cmd 打开命令窗口，输入以下命令：</p> <div class="language- extra-class"><pre class="language-text"><code>ruby -v
+//如安装成功会打印
+ruby 2.2.2p95 (2015-04-13 revision 50295) [i386-mingw32]
+</code></pre></div><p>如上已经安装成功。但因为国内网络的问题导致<code>gem</code>源间歇性中断因此我们需要更换<code>gem</code>源。（使用国内镜像的的 gem 源 https://gems.ruby-china.com/）如下：&gt;</p> <div class="language- extra-class"><pre class="language-text"><code>//1.删除原gem源
+gem sources --remove https://rubygems.org/
+
+//2.添加国内镜像
+gem sources -a https://gems.ruby-china.com/
+
+//3.打印是否替换成功
+gem sources -l
+
+//4.更换成功后打印如下
+*** CURRENT SOURCES ***
+https://gems.ruby-china.com/
+
+// 简化命令
+gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+gem sources -l
+</code></pre></div><h3 id="安装-sass"><a href="#安装-sass" class="header-anchor">#</a> 安装 Sass</h3> <p><code>Ruby</code>自带一个叫做<code>RubyGems</code>的系统，用来安装基于<code>Ruby</code>的软件。我们可以使用这个系统来 轻松地安装<code>Sass</code>和<code>Compass</code>。要安装最新版本的<code>Sass</code>，你需要 win+r 输入 cmd 打开命令窗口，输入下面的命令：</p> <div class="language- extra-class"><pre class="language-text"><code>//安装如下(如mac安装遇到权限问题需加 sudo gem install sass)
+gem install sass
+</code></pre></div><p>在每一个安装过程中，你都会看到如下输出：</p> <div class="language- extra-class"><pre class="language-text"><code>Fetching: sass-3.x.x.gem (100%)
+Successfully installed sass-3.x.x
+Parsing documentation for sass-3.x.x
+Installing ri documentation for sass-3.x.x
+Done installing documentation for sass after 6 secon
+1 gem installed
+</code></pre></div><p>安装完成之后，你应该通过运行下面的命令来确认应用已经正确地安装到了电脑中：</p> <div class="language- extra-class"><pre class="language-text"><code>sass -v
+Sass 3.x.x (Selective Steve)
+</code></pre></div><h3 id="sass-常用命令："><a href="#sass-常用命令：" class="header-anchor">#</a> Sass 常用命令：</h3> <div class="language- extra-class"><pre class="language-text"><code>//更新sass
+gem update sass
+
+//查看sass版本
+sass -v
+
+//查看sass帮助
+sass -h
+</code></pre></div><p><strong>如果安装报错含有 GBK 字符的，在 ruby 下搜索 filesystem.rb 文件，找到 7M 多的那个，在编辑器中打开，然后更改 87 行代码为：<code>if name.encode(&quot;utf-8&quot;, &quot;gbk&quot;).index(@root + &quot;/&quot;) == 0</code></strong></p> <p><strong>如果安装不上，请使用 npm install -g sass 来使用 node 版本的 sass，node 版的 sass 只有 &quot;expanded&quot; and &quot;compressed&quot; 两种编译模式</strong></p> <h2 id="sass-的编译"><a href="#sass-的编译" class="header-anchor">#</a> Sass 的编译</h2> <h3 id="命令行编译："><a href="#命令行编译：" class="header-anchor">#</a> 命令行编译：</h3> <div class="language- extra-class"><pre class="language-text"><code>//单文件转换命令
+sass input.scss output.css
+
+//单文件监听命令
+sass --watch input.scss:output.css
+
+//如果你有很多的sass文件的目录，你也可以告诉sass监听整个目录：
+sass --watch app/sass:public/stylesheets
+</code></pre></div><h3 id="命令行编译配置选项："><a href="#命令行编译配置选项：" class="header-anchor">#</a> 命令行编译配置选项：</h3> <p>命令行编译<code>sass</code>有配置选项，如编译过后 css 排版、生成调试 map、开启 debug 信息等，可通过使用命令<code>sass -v</code>查看详细。我们一般常用两种<code>--style</code> <code>--sourcemap</code></p> <div class="language- extra-class"><pre class="language-text"><code>//编译格式
+sass --watch input.scss:output.css --style compact
+
+//编译添加调试map
+sass --watch input.scss:output.css --sourcemap
+
+//选择编译格式并添加调试map
+sass --watch input.scss:output.css --style expanded --sourcemap
+
+//开启debug信息
+sass --watch input.scss:output.css --debug-info
+</code></pre></div><ul><li><code>--style</code>表示解析后的<code>css</code>是什么排版格式
+sass 内置有四种编译格式:<code>nested``expanded``compact``compressed</code></li> <li><code>--sourcemap</code>表示开启<code>sourcemap</code>调试。开启<code>sourcemap</code>调试后，会生成一个后缀名为<code>.css.map</code>文件</li></ul> <h3 id="编译演示"><a href="#编译演示" class="header-anchor">#</a> 编译演示</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">//未编译样式</span>
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+	<span class="token selector"><span class="token parent important">&amp;</span>-title </span><span class="token punctuation">{</span>
+		<span class="token property">height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+		<span class="token property">line-height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="nested-嵌套格式"><a href="#nested-嵌套格式" class="header-anchor">#</a> nested 嵌套格式</h4> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">/*命令行内容*/</span>
+sass style.<span class="token property">scss</span><span class="token punctuation">:</span>style.css --style nested
+
+<span class="token comment">/*编译过后样式*/</span>
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.box-title </span><span class="token punctuation">{</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+	<span class="token property">line-height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="expanded-扩展格式"><a href="#expanded-扩展格式" class="header-anchor">#</a> expanded 扩展格式</h4> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">/*命令行内容*/</span>
+sass style.<span class="token property">scss</span><span class="token punctuation">:</span>style.css --style expanded
+
+<span class="token comment">/*编译过后样式*/</span>
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.box-title </span><span class="token punctuation">{</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+	<span class="token property">line-height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="compact-紧凑格式"><a href="#compact-紧凑格式" class="header-anchor">#</a> compact 紧凑格式</h4> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">/*命令行内容*/</span>
+sass style.<span class="token property">scss</span><span class="token punctuation">:</span>style.css --style compact
+
+<span class="token comment">/*编译过后样式*/</span>
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.box-title </span><span class="token punctuation">{</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+	<span class="token property">line-height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="compressed-压缩格式"><a href="#compressed-压缩格式" class="header-anchor">#</a> compressed 压缩格式</h4> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">/*命令行内容*/</span>
+sass style.<span class="token property">scss</span><span class="token punctuation">:</span>style.css --style compressed
+
+<span class="token comment">/*编译过后样式*/</span>
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 400px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.box-title </span><span class="token punctuation">{</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+	<span class="token property">line-height</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="sass-的使用"><a href="#sass-的使用" class="header-anchor">#</a> Sass 的使用</h2> <h3 id="一、嵌套"><a href="#一、嵌套" class="header-anchor">#</a> 一、嵌套</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// sass 允许样式可以和页面布局一样嵌套</span>
+<span class="token selector">ul </span><span class="token punctuation">{</span>
+	<span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+	<span class="token selector">li </span><span class="token punctuation">{</span>
+		<span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+		<span class="token property">height</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+		<span class="token property">border</span><span class="token punctuation">:</span> 1px solid red<span class="token punctuation">;</span>
+		<span class="token selector">span </span><span class="token punctuation">{</span>
+			<span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token comment">// sass 的嵌套格式中 &amp; 表示父选择器</span>
+		<span class="token selector"><span class="token parent important">&amp;</span>:hover </span><span class="token punctuation">{</span>
+			<span class="token property">border-color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token selector"><span class="token parent important">&amp;</span>.act </span><span class="token punctuation">{</span>
+			<span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// sass 允许使用属性嵌套</span>
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token selector">font: </span><span class="token punctuation">{</span>
+		<span class="token property">family</span><span class="token punctuation">:</span> <span class="token string">&quot;Arial, sans-serif&quot;</span><span class="token punctuation">;</span>
+		<span class="token property">size</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+		<span class="token property">weight</span><span class="token punctuation">:</span> border<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token selector">border: 5px solid red </span><span class="token punctuation">{</span>
+		<span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+		<span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="二、变量"><a href="#二、变量" class="header-anchor">#</a> 二、变量</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// sass允许声明一个变量</span>
+<span class="token property"><span class="token variable">$bgColor</span></span><span class="token punctuation">:</span> #9000ff<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$border</span></span><span class="token punctuation">:</span> 1px solid <span class="token variable">$bgColor</span><span class="token punctuation">;</span>
+
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+	<span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token variable">$baseSize</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.inner </span><span class="token punctuation">{</span>
+	<span class="token property">border</span><span class="token punctuation">:</span> <span class="token variable">$border</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="三、混合"><a href="#三、混合" class="header-anchor">#</a> 三、混合</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">/* 语法
+@mixin 名字(参数1,参数2...){
+	...
+}*/</span>
+<span class="token keyword">@mixin</span> <span class="token selector">base </span><span class="token punctuation">{</span>
+	<span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+	<span class="token property">height</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+	<span class="token comment">// 可以在公共样式中使用嵌套</span>
+	<span class="token selector">a </span><span class="token punctuation">{</span>
+		<span class="token property">color</span><span class="token punctuation">:</span> #ccc<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">@mixin</span> <span class="token function">text</span><span class="token punctuation">(</span><span class="token variable">$text-color</span><span class="token punctuation">,</span> <span class="token variable">$font-size</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$text-color</span><span class="token punctuation">;</span>
+	<span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">$font-size</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token keyword">@include</span> base<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.inner </span><span class="token punctuation">{</span>
+	<span class="token keyword">@include</span> <span class="token function">text</span><span class="token punctuation">(</span>red<span class="token punctuation">,</span> 18px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">// 有时候可能会很难区分每个参数是什么意思，参数之间是一个什么样的顺序,sass允许通过语法$name: value的形式指定每个参数的值</span>
+	<span class="token comment">// @include text($font-size: 18px,$text-color: red);</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 为了在@include混合器时不必传入所有的参数，我们可以给参数指定一个默认值</span>
+<span class="token keyword">@mixin</span> <span class="token function">default</span><span class="token punctuation">(</span><span class="token variable">$color</span><span class="token punctuation">,</span> <span class="token property"><span class="token variable">$hover</span></span><span class="token punctuation">:</span> <span class="token variable">$color</span><span class="token punctuation">,</span> <span class="token property"><span class="token variable">$act</span></span><span class="token punctuation">:</span> <span class="token variable">$color</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color</span><span class="token punctuation">;</span>
+	<span class="token selector"><span class="token parent important">&amp;</span>:hover </span><span class="token punctuation">{</span>
+		<span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$hover</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token selector"><span class="token parent important">&amp;</span>.act </span><span class="token punctuation">{</span>
+		<span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$act</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.use </span><span class="token punctuation">{</span>
+	<span class="token keyword">@include</span> <span class="token function">default</span><span class="token punctuation">(</span>red<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment">// $hover 和 $act 也会被自动赋值为 red</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="四、继承"><a href="#四、继承" class="header-anchor">#</a> 四、继承</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// sass 使用@extend 选择器 来继承样式，选择器相关的样式都会继承</span>
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token property">padding</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+	<span class="token selector">span </span><span class="token punctuation">{</span>
+		<span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.inner </span><span class="token punctuation">{</span>
+	<span class="token keyword">@extend</span> .box<span class="token punctuation">;</span>
+	<span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="五、导入扩展"><a href="#五、导入扩展" class="header-anchor">#</a> 五、导入扩展</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// css @import 引入其它css文件会让浏览器发出请求引入其它css文件。sass中的 @import 可以将其它scss文件中的样式导入到自身文件中</span>
+<span class="token comment">// 文件 init.scss</span>
+<span class="token selector">* </span><span class="token punctuation">{</span>
+	<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+	<span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 文件 style.scss</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;init&quot;</span><span class="token punctuation">;</span>
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="六、注释"><a href="#六、注释" class="header-anchor">#</a> 六、注释</h3> <div class="language-scss extra-class"><pre class="language-scss"><code>在sass中使用这样的多行注释会在压缩输出的css中被去掉
+<span class="token comment">/**
+ * 天街小雨润如酥
+ * 草色遥看近却无
+ */</span>
+ sass 编译的css中 单行注释不会显示
+ 在多行注释的开头加上！号表示强制注释，编译的时候不会被去掉 <span class="token comment">/*! */</span>
+</code></pre></div><h3 id="七、-颜色调整"><a href="#七、-颜色调整" class="header-anchor">#</a> 七、 颜色调整</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// adjust-hue(要调整的颜色值,要调整的度数)</span>
+<span class="token comment">// lighten(要处理的颜色,要增加的亮度)  让一个颜色变亮</span>
+<span class="token comment">// darken(要处理的颜色,要减小的亮度)  让一个颜色变暗</span>
+<span class="token comment">// saturate(要处理的颜色,要增加的饱和度)</span>
+<span class="token comment">// desaturate(要处理的颜色,要减少的饱和度)</span>
+<span class="token comment">// opacify(要处理的颜色,要增加的不透明度)</span>
+<span class="token comment">// transparentize(要处理的颜色,要增加的透明度)</span>
+<span class="token property"><span class="token variable">$base-color</span></span><span class="token punctuation">:</span> #ff0000<span class="token punctuation">;</span>
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">lighten</span><span class="token punctuation">(</span><span class="token variable">$base-color</span><span class="token punctuation">,</span> 10%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">adjust-hue</span><span class="token punctuation">(</span><span class="token variable">$base-color</span><span class="token punctuation">,</span> 137deg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="八、map"><a href="#八、map" class="header-anchor">#</a> 八、map</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// 语法： $map: (key1: value1, key2: value2, key3: value3 ...)</span>
+<span class="token comment">// map-keys($colors) 拿到所有的key值</span>
+<span class="token comment">// map-values($colors) 拿到所有的value值</span>
+<span class="token comment">// map-has-key($colors, light) 检测key值是否存在</span>
+<span class="token comment">// map-merge($colors. (grey: $eee)) 合并项目</span>
+<span class="token comment">// map-remove($colors, light) 删除其中的项</span>
+<span class="token property"><span class="token variable">$colors</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+	<span class="token property">light</span><span class="token punctuation">:</span> #fff<span class="token punctuation">,</span>
+	<span class="token property">dark</span><span class="token punctuation">:</span> #000<span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token comment">// map-get 获取map中的某个值</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">map-get</span><span class="token punctuation">(</span><span class="token variable">$colors</span><span class="token punctuation">,</span> dark<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="九、数值类型与运算"><a href="#九、数值类型与运算" class="header-anchor">#</a> 九、数值类型与运算</h3> <p>sass 支持的数据类型有:</p> <ul><li>数字，1, 2, 13, 10px</li> <li>字符串，有引号字符串与无引号字符串，&quot;foo&quot;, 'bar', baz</li> <li>颜色，blue, #04a3f9, rgba(255,0,0,0.5)</li> <li>布尔型，true, false</li> <li>空值，null</li> <li>数组 (list)，用空格或逗号作分隔符，1.5em 1em 0 2em, Helvetica, Arial, sans-serif</li> <li>maps, 相当于 JavaScript 的 object，(key1: value1, key2: value2)</li></ul> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">/*
+type-of()	可以判断类型
+sass 支持布尔值运算 and or 以及 not 运算
+sass 支持数学计算	2*8 2+8 除法要加() (8/4) 5px+5px 5px-2 5px*2 (5px*5px) (10px/2px) (40px/2)
+sass 支持一些数学函数
+	abs()	取绝对值
+	round() 取四舍五入的值
+	ceil()	向上取整
+	floor() 向下取整
+	percentage(650px / 1000)	取百分比
+	min(8,5,3)	取最小数
+	max(8,5,7)	取最大值
+字符串 ni + &quot;hao&quot;   wid + th 不能使用*号
+字符串函数：
+	to-upper-case(&quot;width&quot;)变大写
+	to-lower-case(&quot;Width&quot;)变小写
+	str-length(&quot;hello&quot;) 求字符串长度
+	str-index(&quot;hello&quot;,&quot;h&quot;) 求下标
+	str-insert(&quot;hello&quot;,&quot;world&quot;, 2) 插入
+list 列表 如： 1px solid red; 5px 25px 25px 15px;
+	length(list) 求长度
+	nth(list,1)	根据下标找列表相应位置的值
+	index(1px solid red, solid)	根据值找下标
+	append(5px 10px, 20px) 添加项
+	join(20px 30px, 30px 20px) 合并
+	join(20 15, 10 45, common)
+*/</span>
+</code></pre></div><h3 id="十、拼接、插入"><a href="#十、拼接、插入" class="header-anchor">#</a> 十、拼接、插入</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$name</span></span><span class="token punctuation">:</span> <span class="token string">&quot;info&quot;</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$attr</span></span><span class="token punctuation">:</span> <span class="token string">&quot;border&quot;</span><span class="token punctuation">;</span>
+
+<span class="token selector">.alert-<span class="token variable">#{$name}</span> </span><span class="token punctuation">{</span>
+	<span class="token property"><span class="token variable">#{$attr}</span>-color</span><span class="token punctuation">:</span> #ccc<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="十一、控制指令"><a href="#十一、控制指令" class="header-anchor">#</a> 十一、控制指令</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// 判断</span>
+<span class="token comment">/*
+	@if 条件 {
+		...
+	} @else if 条件 {
+		...
+	} @else {
+		...
+	}
+*/</span>
+<span class="token property"><span class="token variable">$flag</span></span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$width</span></span><span class="token punctuation">:</span> 200<span class="token punctuation">;</span>
+
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token keyword">@if</span> <span class="token selector"><span class="token variable">$flag</span> </span><span class="token punctuation">{</span>
+		<span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span> <span class="token keyword">@else</span> <span class="token punctuation">{</span>
+		<span class="token property">border-radius</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.inner </span><span class="token punctuation">{</span>
+	<span class="token keyword">@if</span> <span class="token selector"><span class="token variable">$width</span> == 200 </span><span class="token punctuation">{</span>
+		<span class="token property">height</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 循环 $var 表示变量</span>
+<span class="token comment">/*
+	@for $var from &lt;开始值&gt; through/to &lt;结束值&gt; {
+		...
+		through $var可以等于 结束值，to 不会
+	}
+*/</span>
+<span class="token property"><span class="token variable">$columns</span></span><span class="token punctuation">:</span> 4<span class="token punctuation">;</span>
+<span class="token keyword">@for</span> <span class="token variable">$i</span> <span class="token keyword">from</span> 1 <span class="token keyword">through</span> <span class="token selector"><span class="token variable">$columns</span> </span><span class="token punctuation">{</span>
+	<span class="token selector">.col-<span class="token variable">#{$i}</span> </span><span class="token punctuation">{</span>
+		<span class="token property">width</span><span class="token punctuation">:</span> 100% <span class="token operator">/</span> <span class="token variable">$columns</span> <span class="token operator">*</span> <span class="token variable">$i</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/*
+	@while 条件 {
+		...
+	}
+*/</span>
+<span class="token property"><span class="token variable">$j</span></span><span class="token punctuation">:</span> 6<span class="token punctuation">;</span>
+<span class="token keyword">@while</span> <span class="token selector"><span class="token variable">$j</span> &gt; 0 </span><span class="token punctuation">{</span>
+	<span class="token selector">.item-<span class="token variable">#{$j}</span> </span><span class="token punctuation">{</span>
+		<span class="token property">width</span><span class="token punctuation">:</span> 5px <span class="token operator">*</span> <span class="token variable">$j</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token property"><span class="token variable">$j</span></span><span class="token punctuation">:</span> <span class="token variable">$j</span> <span class="token operator">-</span> 2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 遍历</span>
+<span class="token comment">/*
+	@each $var in $list {
+		...
+	}
+*/</span>
+<span class="token property"><span class="token variable">$icons</span></span><span class="token punctuation">:</span> success error warning<span class="token punctuation">;</span>
+<span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$icon</span> in <span class="token variable">$icons</span> </span><span class="token punctuation">{</span>
+	<span class="token selector">.icon-<span class="token variable">#{$icon}</span> </span><span class="token punctuation">{</span>
+		<span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;../imgs/#{$icon}.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="十二、函数"><a href="#十二、函数" class="header-anchor">#</a> 十二、函数</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">/*
+	@function 名称 (参数1,参数2){
+		...
+	}
+*/</span>
+<span class="token property"><span class="token variable">$colors</span></span><span class="token punctuation">:</span> <span class="token punctuation">(</span>
+	<span class="token property">light</span><span class="token punctuation">:</span> #fff<span class="token punctuation">,</span>
+	<span class="token property">dark</span><span class="token punctuation">:</span> #000<span class="token punctuation">,</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">@function</span> <span class="token function">getColor</span><span class="token punctuation">(</span><span class="token variable">$key</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">@return</span> <span class="token function">map-get</span><span class="token punctuation">(</span><span class="token variable">$colors</span><span class="token punctuation">,</span> <span class="token variable">$key</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.box </span><span class="token punctuation">{</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">getColor</span><span class="token punctuation">(</span>light<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="十三、警告与错误"><a href="#十三、警告与错误" class="header-anchor">#</a> 十三、警告与错误</h3> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@warn</span> <span class="token string">&quot;这是一个警告提示信息&quot;</span><span class="token punctuation">;</span>
+@error <span class="token string">&quot;这是一个错误提示信息&quot;</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/bufan-doc/learn/node-and-ajax/node.html" class="prev">
+          Node.js
+        </a></span> <span class="next"><a href="/bufan-doc/learn/es6/">
+          ES6 简介
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/bufan-doc/assets/js/app.f4cc6427.js" defer></script><script src="/bufan-doc/assets/js/4.d60abc91.js" defer></script><script src="/bufan-doc/assets/js/3.08e48031.js" defer></script><script src="/bufan-doc/assets/js/89.4be8b33a.js" defer></script><script src="/bufan-doc/assets/js/14.618a24b7.js" defer></script>
+  </body>
+</html>
